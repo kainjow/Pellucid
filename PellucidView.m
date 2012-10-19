@@ -3,7 +3,7 @@
 //  Pellucid
 //
 //  Created by Kevin Wojniak on 12/27/09.
-//  Copyright (c) 2009, Kevin Wojniak. All rights reserved.
+//  Copyright (c) 2009, 2012 Kevin Wojniak. All rights reserved.
 //
 
 #import "PellucidView.h"
