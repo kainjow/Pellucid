@@ -1,0 +1,248 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D255AC70486D3F9007BF209 /* Pellucid_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA80370C50100C91783 /* Pellucid_Prefix.pch */; };
+		A5332EAF10E8376800E4B0E5 /* PellucidView.m in Sources */ = {isa = PBXBuildFile; fileRef = F500797A0118B23001CA0E54 /* PellucidView.m */; };
+		A57F68A110E95763004C879F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57F68A010E95763004C879F /* AppKit.framework */; };
+		A57F68A310E95763004C879F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57F68A210E95763004C879F /* Foundation.framework */; };
+		A57F69E910E957A7004C879F /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57F69E810E957A7004C879F /* ScreenSaver.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32DBCFA80370C50100C91783 /* Pellucid_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pellucid_Prefix.pch; sourceTree = "<group>"; };
+		8D255AD20486D3F9007BF209 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D255AD30486D3F9007BF209 /* Pellucid.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pellucid.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57F68A010E95763004C879F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A57F68A210E95763004C879F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A57F69E810E957A7004C879F /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		F50079790118B23001CA0E54 /* PellucidView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PellucidView.h; sourceTree = "<group>"; };
+		F500797A0118B23001CA0E54 /* PellucidView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PellucidView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D255ACD0486D3F9007BF209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57F68A110E95763004C879F /* AppKit.framework in Frameworks */,
+				A57F68A310E95763004C879F /* Foundation.framework in Frameworks */,
+				A57F69E910E957A7004C879F /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Pellucid */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCFA80370C50100C91783 /* Pellucid_Prefix.pch */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = Pellucid;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A57F68A210E95763004C879F /* Foundation.framework */,
+				A57F68A010E95763004C879F /* AppKit.framework */,
+				A57F69E810E957A7004C879F /* ScreenSaver.framework */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D255AD20486D3F9007BF209 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F50079790118B23001CA0E54 /* PellucidView.h */,
+				F500797A0118B23001CA0E54 /* PellucidView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D255AD30486D3F9007BF209 /* Pellucid.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D255AC60486D3F9007BF209 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D255AC70486D3F9007BF209 /* Pellucid_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D255AC50486D3F9007BF209 /* Pellucid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7AD72D08BB986600CE4634 /* Build configuration list for PBXNativeTarget "Pellucid" */;
+			buildPhases = (
+				8D255AC60486D3F9007BF209 /* Headers */,
+				8D255AC90486D3F9007BF209 /* Resources */,
+				8D255ACB0486D3F9007BF209 /* Sources */,
+				8D255ACD0486D3F9007BF209 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pellucid;
+			productInstallPath = "$(HOME)/Library/Screen Savers";
+			productName = Pellucid;
+			productReference = 8D255AD30486D3F9007BF209 /* Pellucid.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Kevin Wojniak";
+			};
+			buildConfigurationList = EF7AD73108BB986600CE4634 /* Build configuration list for PBXProject "Pellucid" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* Pellucid */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D255AC50486D3F9007BF209 /* Pellucid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D255AC90486D3F9007BF209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D255ACB0486D3F9007BF209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5332EAF10E8376800E4B0E5 /* PellucidView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EF7AD72E08BB986600CE4634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pellucid_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = Pellucid;
+				WRAPPER_EXTENSION = saver;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		EF7AD72F08BB986600CE4634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Pellucid_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = Pellucid;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+		EF7AD73208BB986600CE4634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		EF7AD73308BB986600CE4634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"MACOSX_DEPLOYMENT_TARGET[sdk=macosx10.6][arch=*]" = 10.6;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				"SDKROOT[arch=x86_64]" = macosx10.6;
+				VALID_ARCHS = "i386 x86_64 ppc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF7AD72D08BB986600CE4634 /* Build configuration list for PBXNativeTarget "Pellucid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7AD72E08BB986600CE4634 /* Debug */,
+				EF7AD72F08BB986600CE4634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7AD73108BB986600CE4634 /* Build configuration list for PBXProject "Pellucid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7AD73208BB986600CE4634 /* Debug */,
+				EF7AD73308BB986600CE4634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
