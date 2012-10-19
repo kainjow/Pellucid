@@ -18,15 +18,18 @@
 
 - (id)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
 {
-	if (self = [super initWithFrame:frame isPreview:isPreview])
+    self =[super initWithFrame:frame isPreview:isPreview];
+	if (self != nil) {
 		[self setAnimationTimeInterval:0.1];
+    }
 	return self;
 }
 
 - (void)finalize
 {
-	if (color)
+	if (color != NULL) {
 		CGColorRelease(color);
+    }
 	[super finalize];
 }
 
@@ -44,27 +47,27 @@
 	// except loginwindow.
 	CGImageRef screen = NULL;	
 	CFArrayRef allWindowIDs = CGWindowListCreate(kCGWindowListOptionOnScreenBelowWindow, [[self window] windowNumber]);
-	if (allWindowIDs)
-	{
+	if (allWindowIDs != NULL) {
 		CFMutableArrayRef windowIDs = CFArrayCreateMutable(NULL, 0, NULL);
-		
 		CFArrayRef windowDescs = CGWindowListCreateDescriptionFromArray(allWindowIDs);
-		for (CFIndex idx=0; idx<CFArrayGetCount(windowDescs); idx++)
-		{
-			CFDictionaryRef dict = CFArrayGetValueAtIndex(windowDescs, idx);
-			CFStringRef ownerName = CFDictionaryGetValue(dict, kCGWindowOwnerName);
-			if (CFStringCompare(ownerName, CFSTR("loginwindow"), 0) != kCFCompareEqualTo)
-				CFArrayAppendValue(windowIDs, CFArrayGetValueAtIndex(allWindowIDs, idx));
-		}
-		CFRelease(windowDescs);
+        if (windowDescs != NULL) {
+            for (CFIndex idx=0; idx<CFArrayGetCount(windowDescs); idx++) {
+                CFDictionaryRef dict = CFArrayGetValueAtIndex(windowDescs, idx);
+                CFStringRef ownerName = CFDictionaryGetValue(dict, kCGWindowOwnerName);
+                if (CFStringCompare(ownerName, CFSTR("loginwindow"), 0) != kCFCompareEqualTo) {
+                    CFArrayAppendValue(windowIDs, CFArrayGetValueAtIndex(allWindowIDs, idx));
+                }
+            }
+            CFRelease(windowDescs);
+        }
 		CFRelease(allWindowIDs);
-		
 		screen = CGWindowListCreateImageFromArray(CGRectInfinite, windowIDs, kCGWindowImageDefault);
 		CFRelease(windowIDs);
 	}
 	
-	if (!screen)
+	if (screen == NULL) {
 		return;
+    }
 	
 	// draw the image
 	CGContextRef ctx = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
@@ -73,8 +76,9 @@
 	CGImageRelease(screen);
 	
 	// draw a transparent black
-	if (!color)
+	if (color == NULL) {
 		color = CGColorCreateGenericRGB(0.0, 0.0, 0.0, 0.5);
+    }
 	CGContextSetFillColorWithColor(ctx, color);
 	CGContextFillRect(ctx, bounds);
 }
